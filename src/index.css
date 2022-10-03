@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.Post{
+    border: 1px solid;
+    border-radius: 12px;
+    width: 50%;
+    height: 120vh;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+
+}
+.text-post{
+    padding: 10px;
+}
+
+.user-post{
+    border-bottom: 1px solid;
+    height: 70px;
+    display:flex;
+
+}
+
+.userposttext>span{
+    padding: 0 6px;
+    font-size: 16px;
+    color: beige;
+}
+
+.userlike-post{
+    border-bottom: 1px solid;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    
+
+}
+
+

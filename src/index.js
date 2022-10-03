@@ -1,7 +1,10 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
 
-const Post = ({ facebookicon, heading, date, textpost, imagepost, likeemoji, heratemoji,
-  countshare, like, comment, share, committext, older, usericon, commenttext }) => (
+
+const post = ({ facebookicon, heading, date, textpost, imagepost, likeemoji, heratemoji,
+  countShare, like, comment, share, committext, older, usericon, commenttext }) => (
 
 
   <div className="wrapper">
@@ -30,7 +33,7 @@ const Post = ({ facebookicon, heading, date, textpost, imagepost, likeemoji, her
       </div>
 
       <div className="share">
-        <span> {countshare}</span>
+        <span> {countShare}</span>
       </div>
 
       <div className='likecommentshare-post'>
@@ -59,7 +62,7 @@ const Post = ({ facebookicon, heading, date, textpost, imagepost, likeemoji, her
 
 )
 
-const FacebookPost= () => (
+const FacebookPost= (Post) => (
   <div>
     <Post
 
@@ -129,11 +132,12 @@ commenttext='Great! '
       usericon='https://img.icons8.com/fluency/48/000000/user-male-circle.png'
       commenttext='Great! '
       />
-      
+
   </div>
 
 )
 
+ReactDOM.render(<FacebookPost />, document.querySelector('#root'));
 
 
 
